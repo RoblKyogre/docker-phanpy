@@ -16,3 +16,5 @@ services:
       #PHANPY_LINGVA_INSTANCES: "lingva.phanpy.social example.org"
       #PHANPY_IMG_ALT_API_URL: "https://example.org"
       #PHANPY_GIPHY_API_KEY: "giphy-key-here"
+    ports:
+      - 4173:80
