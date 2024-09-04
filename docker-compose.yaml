@@ -1,0 +1,18 @@
+services:
+  phanpy:
+    #image: phanpy:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phanpy
+    restart: unless-stopped
+    environment:
+      #PHANPY_CLIENT_NAME: "Phanpy"
+      #PHANPY_WEBSITE: "https://phanpy.social"
+      #PHANPY_DEFAULT_INSTANCE: "mastodon.social"
+      #PHANPY_DEFAULT_INSTANCE_REGISTRATION_URL: "https://mastodon.social/auth/sign_up"
+      #PHANPY_PRIVACY_POLICY_URL: "https://mastodon.social/privacy-policy"
+      #PHANPY_DEFAULT_LANG: "en"
+      #PHANPY_LINGVA_INSTANCES: "lingva.phanpy.social example.org"
+      #PHANPY_IMG_ALT_API_URL: "https://example.org"
+      #PHANPY_GIPHY_API_KEY: "giphy-key-here"
