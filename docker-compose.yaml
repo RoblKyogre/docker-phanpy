@@ -7,7 +7,7 @@ services:
     container_name: phanpy
     restart: unless-stopped
     environment:
-      #PHANPY_CLIENT_NAME: "Phanpy"
+      PHANPY_CLIENT_NAME: "Phanpy"
       #PHANPY_WEBSITE: "https://phanpy.social"
       #PHANPY_DEFAULT_INSTANCE: "mastodon.social"
       #PHANPY_DEFAULT_INSTANCE_REGISTRATION_URL: "https://mastodon.social/auth/sign_up"

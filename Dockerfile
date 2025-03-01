@@ -8,6 +8,7 @@ RUN apk add --no-cache \
 # init phanpy
 RUN git clone -b main https://github.com/cheeaun/phanpy.git /app
 WORKDIR /app
+RUN wget -O gts-local.patch https://patch-diff.githubusercontent.com/raw/cheeaun/phanpy/pull/1047.patch && git apply --3way --union --ignore-space-change --ignore-whitespace gts-local.patch && rm gts-local.patch
 RUN npm install
 
 WORKDIR /
