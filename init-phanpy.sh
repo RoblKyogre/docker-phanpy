@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
-cd /app
+set -e
+pushd /app
 npm run build
-cd /
+popd
