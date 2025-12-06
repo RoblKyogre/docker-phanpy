@@ -12,5 +12,5 @@ RUN wget -O gts-local.patch https://patch-diff.githubusercontent.com/raw/cheeaun
 RUN npm install
 
 WORKDIR /
-ADD init-phanpy.sh /docker-entrypoint.d/00_init-phanpy.sh
+ADD init-phanpy.sh /docker-entrypoint.d/00-init-phanpy.sh
 ADD nginx-phanpy.conf /etc/nginx/conf.d/default.conf
